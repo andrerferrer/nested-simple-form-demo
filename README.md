@@ -1,24 +1,17 @@
-# README
+## Goal
+This is an app to teach how to implement associations in rails forms using the simple_form gem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Disclaimer
+You need to install the gem 'simple_form'
 
-Things you may want to cover:
+## How to
+### 1. Add this to your simple form 
 
-* Ruby version
+```erb
+	<%= form.input :category_id, collection: @categories %>
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you want to be more verbose:
+```erb
+	<%= form.input :category_id, collection: @categories, label_method: :title, value_method: :id, label: "Restaurant Categories", include_blank: false %>
+```
