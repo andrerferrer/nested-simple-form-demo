@@ -1,0 +1,12 @@
+<h1>Restaurants#new</h1>
+
+<%= simple_form_for @restaurant do |form| %>
+	<%= form.input :name %>
+	<%= form.input :address %>
+	<%= form.input :category_id, collection: @categories %>
+	
+	<%# If you want to be verbose: %>
+	<%# form.input :category_id, collection: @categories, label_method: :title, value_method: :id, label: "Restaurant Categories", include_blank: false %>
+
+	<%= form.submit %>
+<% end %>
