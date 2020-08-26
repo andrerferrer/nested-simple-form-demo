@@ -1,5 +1,8 @@
-## Goal
-This is an app to teach how to implement associations in Ruby on Rails forms using the `simple_form` gem
+# GOAL
+
+This is a demo to show-case how to implement associations in Ruby on Rails forms using the `simple_form` gem
+
+[You can also check my other demos](https://github.com/andrerferrer/dedemos/blob/master/README.md#ded%C3%A9mos).
 
 ## Disclaimer
 You need to install the [`gem 'simple_form'`](https://github.com/heartcombo/simple_form)
